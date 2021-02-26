@@ -7,8 +7,8 @@ import java.util.Map;
 
 public class LessonTen {
     public static void main(String[] args){
-        task1();
-        //task2(); //второе задание не моу понять как сделать. Отстал от вас...
+        //task1();
+        task2();
     }
 
     private static void task2(){

@@ -2,11 +2,12 @@ package kz.ozom.lesson10;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class PhoneList {
-    private HashMap<String, ArrayList> phoneList = new HashMap<>();
+    private Map<String, ArrayList> phoneList = new HashMap<>();
 
-    public String getPhoneList(String key) {
+    public ArrayList getPhoneList(String key) {
         return this.phoneList.get(key);
     }
 
