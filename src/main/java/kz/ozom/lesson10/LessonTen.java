@@ -1,9 +1,6 @@
 package kz.ozom.lesson10;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class LessonTen {
     public static void main(String[] args){
@@ -13,8 +10,12 @@ public class LessonTen {
 
     private static void task2(){
         PhoneList phoneList = new PhoneList();
-        ArrayList<String> phones = new ArrayList<>();
-        phoneList.setPhoneList("John", new ArrayList());
+        phoneList.setPhoneList("John", new ArrayList(List.of("3333")));
+        phoneList.setPhoneList("John", new ArrayList(List.of("333")));
+        phoneList.setPhoneList("John", new ArrayList(List.of("555")));
+        phoneList.setPhoneList("John", new ArrayList(List.of("666")));
+
+        System.out.println(phoneList.getPhoneList("John"));
     }
 
     private static void task1() {
