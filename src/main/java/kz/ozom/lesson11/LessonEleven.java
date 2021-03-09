@@ -41,7 +41,6 @@ public class LessonEleven {
         System.out.println(arrayListBox2);
         System.out.println(getWeight(arrayListBox2.size(), box2.getFruitWeight()));
 
-        System.out.println(box1.compare(box1));
     }
 
     private static float getWeight(int count, float fruitWeight) {
