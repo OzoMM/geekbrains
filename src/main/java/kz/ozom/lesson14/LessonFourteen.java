@@ -20,20 +20,28 @@ public class LessonFourteen {
 
     }
 
-    public static void checkArray(ArrayList arrayList) throws FourIntException {
-        int lastPosition = 0;
+    public static ArrayList checkArray(ArrayList arrayList) throws FourIntException {
+        int lastPosition = -1;
+        ArrayList<Integer> newList = new ArrayList<>();
         try {
             for (int i = 0; i < arrayList.size(); i++) {
-                if (arrayList.get(i).equals(4)){
+                if ((Integer)arrayList.get(i) == 4){
                     lastPosition = i;
                 }
-                if (lastPosition == 0) {
-                    throw new FourIntException();
+            }
+            if (lastPosition == -1) {
+                throw new FourIntException();
+            }
+            else {
+                for (int i = lastPosition + 1; i < arrayList.size(); i++) {
+                    newList.add((Integer) arrayList.get(i));
                 }
             }
         } catch (FourIntException e){
             System.out.println("Нет ни одной четверки");
         }
+
+        return newList;
     }
 
     public static class FourIntException extends Exception {
