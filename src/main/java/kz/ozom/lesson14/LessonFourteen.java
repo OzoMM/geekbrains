@@ -9,7 +9,12 @@ public class LessonFourteen {
 
     public static void main(String[] args) {
 
-        LOGGER.trace("ddd");
+        LOGGER.debug("Debug");
+        LOGGER.info("Info");
+        LOGGER.warn("Warn");
+        LOGGER.error("Error");
+        LOGGER.fatal("Fatal");
+        LOGGER.info("String: {}.", "Hello, World");
 
     }
 }
